@@ -16,6 +16,6 @@ jobs:
                   lfs: true
 
             - name: Push to HF Spaces
-              run: git push https://jacoblincool:$HF_TOKEN@huggingface.co/spaces/JacobLinCool/tiktoken-calculator main
+              run: git push https://jacoblincool:$HF_TOKEN@huggingface.co/spaces/JacobLinCool/tiktoken-calculator main --force
               env:
                   HF_TOKEN: ${{ secrets.HF_TOKEN }}
