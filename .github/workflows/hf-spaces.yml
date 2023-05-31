@@ -20,7 +20,7 @@ jobs:
               with:
                   github: ${{ secrets.GITHUB_TOKEN }}
                   user: jacoblincool
-                  space: tiktoken-calculatore
+                  space: tiktoken-calculator
                   token: ${{ secrets.HF_TOKEN }}
                   emoji: 🤗
                   colorFrom: yellow
