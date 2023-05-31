@@ -1,14 +1,3 @@
----
-title: Tiktoken Calculator
-emoji: 🤗
-colorFrom: yellow
-colorTo: orange
-sdk: gradio
-app_file: app.py
-python_version: 3.11
-pinned: false
----
-
 # Tiktoken Calculator
 
 Calculate the token count for GPT-4, GPT-3.5, GPT-3, and GPT-2.

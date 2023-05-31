@@ -15,7 +15,17 @@ jobs:
                   fetch-depth: 0
                   lfs: true
 
-            - name: Push to HF Spaces
-              run: git push https://jacoblincool:$HF_TOKEN@huggingface.co/spaces/JacobLinCool/tiktoken-calculator main --force
-              env:
-                  HF_TOKEN: ${{ secrets.HF_TOKEN }}
+            - name: Sync to Hugging Face Spaces
+              uses: JacobLinCool/huggingface-sync@v1
+              with:
+                  github: ${{ secrets.GITHUB_TOKEN }}
+                  user: jacoblincool
+                  space: tiktoken-calculatore
+                  token: ${{ secrets.HF_TOKEN }}
+                  emoji: 🤗
+                  colorFrom: yellow
+                  colorTo: orange
+                  sdk: gradio
+                  app_file: app.py
+                  python_version: 3.11
+                  pinned: false
